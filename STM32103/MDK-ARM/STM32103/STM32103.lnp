@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"stm32103\startup_stm32f103xb.o"
+"stm32103\oled.o"
+"stm32103\main.o"
+"stm32103\gpio.o"
+"stm32103\stm32f1xx_it.o"
+"stm32103\stm32f1xx_hal_msp.o"
+"stm32103\stm32f1xx_hal_gpio_ex.o"
+"stm32103\stm32f1xx_hal_tim.o"
+"stm32103\stm32f1xx_hal_tim_ex.o"
+"stm32103\stm32f1xx_hal.o"
+"stm32103\stm32f1xx_hal_rcc.o"
+"stm32103\stm32f1xx_hal_rcc_ex.o"
+"stm32103\stm32f1xx_hal_gpio.o"
+"stm32103\stm32f1xx_hal_dma.o"
+"stm32103\stm32f1xx_hal_cortex.o"
+"stm32103\stm32f1xx_hal_pwr.o"
+"stm32103\stm32f1xx_hal_flash.o"
+"stm32103\stm32f1xx_hal_flash_ex.o"
+"stm32103\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "STM32103\STM32103.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32103.map" -o STM32103\STM32103.axf
